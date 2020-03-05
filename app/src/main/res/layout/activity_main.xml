@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FF0000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mainBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="SON DEPREMLER"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="@drawable/back"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/depremList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.10"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:textAlignment="center">
+
+    </ListView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
